@@ -29,11 +29,20 @@ export const auth = betterAuth({
 
   trustedOrigins: [process.env.CLIENT_URL],
 
+  // Google and Email Account Linking
+  account: {
+    accountLinking: {
+      enabled: true,
+      trustedProviders: ["google"],
+    },
+  },
+
   emailAndPassword: {
     enabled: true,
     minPasswordLength: 8,
   },
 
+  // Google OAuth Configuration
   socialProviders: {
     ...(process.env.GOOGLE_CLIENT_ID &&
     process.env.GOOGLE_CLIENT_SECRET
