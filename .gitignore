@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+!.env.example
+scripts/check-tutor-account.js
+scripts/reset-admin-password.js
+scripts/reset-tutor1-password.js
