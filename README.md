@@ -1,4 +1,4 @@
-# MentorLagbe — Server
+﻿# MentorLagbe — Server
 
 MentorLagbe Server is the backend application of MentorLagbe, an online tutoring platform that connects students with tutors across Bangladesh. It provides RESTful APIs for authentication, user management, tuition management, applications, bookmarks, and payment processing.
 
@@ -46,7 +46,7 @@ MentorLagbe Server is the backend application of MentorLagbe, an online tutoring
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_SERVER_REPOSITORY_URL
+git clone https://github.com/aynan-codes/mentorlagbe-server.git
 ```
 
 ### 2. Navigate to the Project Directory
