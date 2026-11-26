@@ -18,6 +18,15 @@ export const auth = betterAuth({
 
   secret: process.env.BETTER_AUTH_SECRET,
 
+  // Cross-domain cookie configuration for Netlify + Render
+  advanced: {
+    defaultCookieAttributes: {
+      sameSite: "none",
+      secure: true,
+      httpOnly: true,
+    },
+  },
+
   trustedOrigins: [process.env.CLIENT_URL],
 
   emailAndPassword: {
@@ -47,7 +56,6 @@ export const auth = betterAuth({
       },
 
       // Bangladesh Division
-      // Google OAuth onboarding-এর জন্য optional
       division: {
         type: "string",
         required: false,
